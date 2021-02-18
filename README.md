@@ -2,18 +2,20 @@
 
 > ## Branch Structure
 
-> ### Branch Name: `week1`
->> FolderName: `v-js-part1` - Basics of Vanilla JS Part 1
->>
->> FolderName: `v-js-part2` - Basics of Vanilla JS Part 2
->>
->> FolderName: `intro-rn-ios-js` - Introduction to React-Native iOS + JS
+> ### Branch Name: `week1` <br>
+>`v-js-part1` - Basics of Vanilla JS Part 1
+>
+>`v-js-part2` - Basics of Vanilla JS Part 2
+>
+>`intro-rn-ios-js` - Introduction to React-Native iOS + JS
+>
+<br>
 
-> ### Branch Name: `week2`
->> FolderName: `intro-rn-android-js` - Introduction to React-Native Android + JS
+> ### Branch Name: `week2` <br>
+>`intro-rn-android-js` - Introduction to React-Native Android + JS
 >>
->> FolderName: `rn-setup` - React Native Setup
+>`rn-setup` - React Native Setup
 >>
->> FolderName: `intro-android-app` - Intro Android App Development
+>`intro-android-app` - Intro Android App Development
 >>
->> FolderName: `jsx-react` - JSX & React
+>`jsx-react` - JSX & React
