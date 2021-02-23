@@ -9,7 +9,6 @@
 >
 >`intro-rn-ios-js` - Introduction to React-Native iOS + JS
 >
-<br>
 
 > ### Branch Name: `week2` <br>
 >`intro-rn-android-js` - Introduction to React-Native Android + JS
