@@ -1,4 +1,4 @@
-var list = [
+const list = [
     {
         productId: 82,
         barcodeId: 2090100300009,
@@ -565,21 +565,22 @@ var list = [
 //   Perform the following operations
 
 // 1) Move primaryCategory Keys to outer object and delete primaryCategory
-list.map(data => {
-    Object.entries(data.primaryCategory).map(item => (data[item[0]] = item[1]));
-    delete data.primaryCategory;
+
+// 1st Way - By destructuring the object
+let list_copy = list.map(data => {
+    const { primaryCategory, ...data_copy } = { ...data, ...data.primaryCategory};
+    return data_copy;
 });
-// console.log(list);
+console.log("🚀 OUTPUT: ~ list_copy", list_copy);
+
+// 2nd Way - 
+// list.map(data => {
+//     Object.entries(data.primaryCategory).map(item => (data[item[0]] = item[1]));
+//     delete data.primaryCategory;
+// });
+// console.log('OUTPUT: list', list[1]);
 
 // 2) Move all outer keys into a new key data
-// list.forEach(data => {
-//     data.newkey = { ...data };
-//     Object.keys(data).map(item => {
-//         if (item != 'newkey') {
-//             delete data[item];
-//         }
-//     });
-// });
 
 // 1st Way : Update the old data "list" by moving all data to a common key "newkey"
 // for (const data of list) {
@@ -588,7 +589,7 @@ list.map(data => {
 //         item != 'newkey' ? delete data[item] : null;
 //     });
 // }
-// console.log('OUTPUT: list', list);
+// console.log('OUTPUT: list', list[1]);
 
 // 2nd Way : Update the old data "list" by moving all data to dynamic key
 // let newkey = 101;
@@ -599,4 +600,4 @@ list.map(data => {
 //         item == newkey ? newkey++ : null;
 //     });
 // }
-// console.log('OUTPUT: list', list);
+// console.log('OUTPUT: list', list[1]);
